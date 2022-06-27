@@ -29,7 +29,7 @@ resource "aws_ecs_task_definition" "nginx_task" {
   requires_compatibilities = ["FARGATE"]
   cpu                      = 1024
   memory                   = 2048
-  execution_role_arn       = "arn:aws:iam::514141280285:role/ECSTaskExecutionRole"
+  execution_role_arn       = "arn:aws:iam::514141280285:role/terraform-jenkins-role"
 
   container_definitions = <<DEFINITION
 [
